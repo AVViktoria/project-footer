@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio page</title>
+    <!-- Projects font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body class="page">
+    <!-- Шапка сайта Header-->
+    <header class="header">
+      <div class="container header-container">
+        <a class="logo header-logo" lang="en" href="./index.html" aria-label="Логотип сайта"
+          >Web<span class="logo__accent-dark">Studio</span></a
+        >
+        <!-- Мобильное меню Mobile-menu -->
+        <button
+          class="nav-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            class="nav-menu__icon"
+            width="24"
+            height="24"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="nav-menu__icon-cross"
+              href="./images/icons.svg/symbol-defs-opt.svg#icon-close-black"
+            ></use>
+            <use
+              class="nav-menu__icon-menu"
+              href="./images/icons.svg/icon-nav-menu.svg#icon-nav-menu"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link link" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link nav__link--current link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <ul class="menu-contacts list">
+            <li class="menu-contacts__item">
+              <a
+                class="menu-contacts__link menu-contacts__link--accent link icon-envelope-hover"
+                href="mailto:info@example.com"
+              >
+                <svg class="menu-contacts__icon icon" width="16" height="12">
+                  <use href="./images/icons.svg/symbol-defs-opt.svg#icon-envelope-hover"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="menu-contacts__item">
+              <a
+                class="menu-contacts__link icon-phone-hover menu-contacts__link--accent link"
+                href="tel:+380991111111"
+              >
+                <svg class="menu-contacts__icon icon" width="10" height="16">
+                  <use href="./images/icons.svg/symbol-defs-opt.svg#icon-phone-hover"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+
+          <ul class="menu-social list">
+            <li class="menu-social__item">
+              <a
+                class="menu-social__link link"
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Инстаграм иконка"
+                lang="en"
+                >Instagram</a
+              >
+            </li>
+            <li class="menu-social__item">
+              <a
+                class="menu-social__link link"
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Твитер иконка"
+                lang="en"
+                >Twitter</a
+              >
+            </li>
+            <li class="menu-social__item">
+              <a
+                class="menu-social__link link"
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Фейсбук иконка"
+                lang="en"
+                >Facebook</a
+              >
+            </li>
+            <li class="menu-social__item">
+              <a
+                class="menu-social__link link"
+                href=""
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label="Линкедин иконка"
+                lang="en"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Секция Фильтры Filters-->
+      <section class="filters section">
+        <div class="container">
+          <h1 class="filters__title visually-hidden">Фильтры ссылки на страницы сайта</h1>
+          <ul class="filters__list list">
+            <li class="filters__item">
+              <button class="filters__btn filters__btn--current btn" type="button">Все</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Приложения</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Дизайн</button>
+            </li>
+            <li class="filters__item">
+              <button class="filters__btn btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+        </div>
+
+        <!--Секция проекты Projects-->
+        <div class="projects container">
+          <ul class="projects__list list">
+            <li class="projects__item">
+              <a class="projects__icon-link link" href="">
+                <div class="projects__holder">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-1_lg.webp    1x,
+                        ./images/portfolio/portfolio-1_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-1_lg.jpg    1x,
+                        ./images/portfolio/portfolio-1_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-1_md.webp    1x,
+                        ./images/portfolio/portfolio-1_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-1_md.jpg    1x,
+                        ./images/portfolio/portfolio-1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-1_sm.webp    1x,
+                        ./images/portfolio/portfolio-1_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-1_sm.jpg    1x,
+                        ./images/portfolio/portfolio-1_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Default img -->
+                    <img
+                      class="projects__img"
+                      src="./images/portfolio/portfolio-1_sm.jpg"
+                      alt="Фотографии трех работников компании"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="projects__action">
+                    <p class="projects__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__sign-group">
+                  <h2 class="projects__title section-title">Технокряк</h2>
+                  <p class="projects__label">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__icon-link link" href="">
+                <div class="projects__holder">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-2_lg.webp    1x,
+                        ./images/portfolio/portfolio-2_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-2_lg.jpg    1x,
+                        ./images/portfolio/portfolio-2_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-2_md.webp    1x,
+                        ./images/portfolio/portfolio-2_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-2_md.jpg    1x,
+                        ./images/portfolio/portfolio-2_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-2_sm.webp    1x,
+                        ./images/portfolio/portfolio-2_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-2_sm.jpg    1x,
+                        ./images/portfolio/portfolio-2_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Default img -->
+                    <img
+                      class="projects__img"
+                      src="./images/portfolio/portfolio-2_sm.jpg"
+                      alt="Дизайн постера с двумя баскетболистами"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="projects__action">
+                    <p class="projects__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__sign-group">
+                  <h2 class="projects__title section-title" lang="en">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="projects__label">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__icon-link link" href="">
+                <div class="projects__holder">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-3_lg.webp    1x,
+                        ./images/portfolio/portfolio-3_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-3_lg.jpg    1x,
+                        ./images/portfolio/portfolio-3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-3_md.webp    1x,
+                        ./images/portfolio/portfolio-3_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-3_md.jpg    1x,
+                        ./images/portfolio/portfolio-3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-3_sm.webp    1x,
+                        ./images/portfolio/portfolio-3_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-3_sm.jpg    1x,
+                        ./images/portfolio/portfolio-3_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Default img -->
+                    <img
+                      class="projects__img"
+                      src="./images/portfolio/portfolio-3_sm.jpg"
+                      alt="Изображение приложения ресторана"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="projects__action">
+                    <p class="projects__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__sign-group">
+                  <h2 class="projects__title section-title" lang="en">Ресторан Seafood</h2>
+                  <p class="projects__label">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__icon-link link" href="">
+                <div class="projects__holder">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-4_lg.webp    1x,
+                        ./images/portfolio/portfolio-4_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-4_lg.jpg    1x,
+                        ./images/portfolio/portfolio-4_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-4_md.webp    1x,
+                        ./images/portfolio/portfolio-4_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-4_md.jpg    1x,
+                        ./images/portfolio/portfolio-4_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-4_sm.webp    1x,
+                        ./images/portfolio/portfolio-4_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-4_sm.jpg    1x,
+                        ./images/portfolio/portfolio-4_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Default img -->
+                    <img
+                      class="projects__img"
+                      src="./images/portfolio/portfolio-4_sm.jpg"
+                      alt="Наушники черного цвета"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="projects__action">
+                    <p class="projects__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__sign-group">
+                  <h2 class="projects__title section-title" lang="en">Проект Prime</h2>
+                  <p class="projects__label">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__icon-link link" href="">
+                <div class="projects__holder">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-5_lg.webp    1x,
+                        ./images/portfolio/portfolio-5_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-5_lg.jpg    1x,
+                        ./images/portfolio/portfolio-5_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-5_md.webp    1x,
+                        ./images/portfolio/portfolio-5_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-5_md.jpg    1x,
+                        ./images/portfolio/portfolio-5_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-5_sm.webp    1x,
+                        ./images/portfolio/portfolio-5_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-5_sm.jpg    1x,
+                        ./images/portfolio/portfolio-5_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Default img -->
+                    <img
+                      class="projects__img"
+                      src="./images/portfolio/portfolio-5_sm.jpg"
+                      alt="Примеры двух коробок разных размеров"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="projects__action">
+                    <p class="projects__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__sign-group">
+                  <h2 class="projects__title section-title" lang="en">Проект Boxes</h2>
+                  <p class="projects__label">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__icon-link link" href="">
+                <div class="projects__holder">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-6_lg.webp    1x,
+                        ./images/portfolio/portfolio-6_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-6_lg.jpg    1x,
+                        ./images/portfolio/portfolio-6_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-6_md.webp    1x,
+                        ./images/portfolio/portfolio-6_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-6_md.jpg    1x,
+                        ./images/portfolio/portfolio-6_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-6_sm.webp    1x,
+                        ./images/portfolio/portfolio-6_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-6_sm.jpg    1x,
+                        ./images/portfolio/portfolio-6_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Default img -->
+                    <img
+                      class="projects__img"
+                      src="./images/portfolio/portfolio-6_sm.jpg"
+                      alt="Изображение проэкта главной страницы сайта"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="projects__action">
+                    <p class="projects__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__sign-group">
+                  <h2 class="projects__title section-title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="projects__label">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__icon-link link" href="">
+                <div class="projects__holder">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-7_lg.webp    1x,
+                        ./images/portfolio/portfolio-7_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-7_lg.jpg    1x,
+                        ./images/portfolio/portfolio-7_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-7_md.webp    1x,
+                        ./images/portfolio/portfolio-7_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-7_md.jpg    1x,
+                        ./images/portfolio/portfolio-7_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-7_sm.webp    1x,
+                        ./images/portfolio/portfolio-7_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-7_sm.jpg    1x,
+                        ./images/portfolio/portfolio-7_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Default img -->
+                    <img
+                      class="projects__img"
+                      src="./images/portfolio/portfolio-7_sm.jpg"
+                      alt="Пример дизайна журнала"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="projects__action">
+                    <p class="projects__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__sign-group">
+                  <h2 class="projects__title section-title" lang="en">Издание Limited Edition</h2>
+                  <p class="projects__label">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__icon-link link" href="">
+                <div class="projects__holder">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-8_lg.webp    1x,
+                        ./images/portfolio/portfolio-8_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-8_lg.jpg    1x,
+                        ./images/portfolio/portfolio-8_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-8_md.webp    1x,
+                        ./images/portfolio/portfolio-8_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-8_md.jpg    1x,
+                        ./images/portfolio/portfolio-8_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-8_sm.webp    1x,
+                        ./images/portfolio/portfolio-8_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-8_sm.jpg    1x,
+                        ./images/portfolio/portfolio-8_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Default img -->
+                    <img
+                      class="projects__img"
+                      src="./images/portfolio/portfolio-8_sm.jpg"
+                      alt="Пример дизайна изделий ярлык"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="projects__action">
+                    <p class="projects__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__sign-group">
+                  <h2 class="projects__title section-title" lang="en">Проект LAB</h2>
+                  <p class="projects__label">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a class="projects__icon-link link" href="">
+                <div class="projects__holder">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-9_lg.webp    1x,
+                        ./images/portfolio/portfolio-9_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/portfolio-9_lg.jpg    1x,
+                        ./images/portfolio/portfolio-9_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-9_md.webp    1x,
+                        ./images/portfolio/portfolio-9_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/portfolio-9_md.jpg    1x,
+                        ./images/portfolio/portfolio-9_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-9_sm.webp    1x,
+                        ./images/portfolio/portfolio-9_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/portfolio-9_sm.jpg    1x,
+                        ./images/portfolio/portfolio-9_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <!-- Default img -->
+                    <img
+                      class="projects__img"
+                      src="./images/portfolio/portfolio-9_sm.jpg"
+                      alt="Открытый компьютер"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
+
+                  <div class="projects__action">
+                    <p class="projects__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="projects__sign-group">
+                  <h2 class="projects__title section-title" lang="en">Growing Business</h2>
+                  <p class="projects__label">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал сайта Footer -->
+    <footer class="footer">
+      <div class="address footer__holder">
+        <div class="address__container">
+          <a class="address__logo logo" lang="en" aria-label="Логотип сайта" href="./index.html"
+            >Web<span class="address__logo-text logo__accent-white">Studio</span></a
+          >
+          <address class="address__box">
+            <ul class="address__list list">
+              <li class="address__item">
+                <a
+                  class="address__link link"
+                  href="https://goo.gl/maps/sHWixux6kZh7dcSC8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link address__link--accent link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__link address__link--accent link" href="tel:+380991111111"
+                  >tel:+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="socials social-icons">
+          <p class="socials__title social-icons__title"><b>Присоединяйтесь</b></p>
+          <ul class="socials__list social-icons__list">
+            <li class="socials__item social-icons__item">
+              <a
+                class="socials__link social-icons__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Фейсбук иконка"
+              >
+                <svg class="socials__picture social-icons__picture">
+                  <use href="./images/icons.svg/symbol-defs-opt.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons__item socials__item">
+              <a
+                class="social-icons__link socials__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Инстаграм иконка"
+              >
+                <svg class="social-icons__picture socials__picture">
+                  <use href="./images/icons.svg/symbol-defs-opt.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons__item socials__item">
+              <a
+                class="social-icons__link socials__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Твитер иконка"
+              >
+                <svg class="social-icons__picture socials__picture">
+                  <use href="./images/icons.svg/symbol-defs-opt.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-icons__item socials__item">
+              <a
+                class="social-icons__link socials__link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Линкединиконка"
+              >
+                <svg class="social-icons__picture socials__picture">
+                  <use href="./images/icons.svg/symbol-defs-opt.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="subscribe-form">
+          <label class="subscribe-form__label">
+            <span class="subscribe-form__title">Подпишитесь на рассылку</span>
+            <input
+              class="subscribe-form__text text"
+              type="text"
+              name="e-mail"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="subscribe-form__btn btn" type="submit">Подписаться</button>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- <script>
+      (() => {
+        document.querySelector('.js-speaker-form').addEventListener('.submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, e-mail) => console.log('${e-mail}: ${value}'));
+        });
+      })();
+    </script> -->
+  </body>
+</html>
