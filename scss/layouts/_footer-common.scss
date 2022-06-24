@@ -1,0 +1,222 @@
+/*
+============================
+| Footer section / Подвал 
+============================
+*/
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 57px;
+  background-color: var(--dark-bg-cl);
+}
+
+.footer__holder {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include display-flex(baseline);
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+
+/*
+============================
+| Address section / Адрес секция
+============================
+*/
+
+.address__container {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.address__logo {
+  margin-bottom: 20px;
+  padding: 0;
+  margin-right: 0;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.address__list {
+  display: block;
+}
+
+.address__item {
+  &:first-child {
+    margin-bottom: 9px;
+  }
+  &:last-child {
+    margin-top: 6px;
+  }
+}
+
+.address__link {
+  color: var(--main-white-cl);
+  font-style: normal;
+  line-height: 1.7;
+
+  &--accent {
+    color: var(--accent-cl-white);
+  }
+}
+
+/* 
+============================
+| Join section / Присоединяйтесь
+============================
+*/
+
+.socials {
+  padding: 0;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
+}
+
+.socials__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: normal;
+  @include fonts(14px, 1.14);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-white-cl);
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
+.socials__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
+  margin-right: 10px;
+}
+
+.socials__item:not(:last-child) {
+  padding-left: 0;
+}
+
+.socials__link {
+  background-color: var(--accent-bg-cl);
+}
+
+.socials__picture {
+  fill: var(--main-white-cl);
+}
+/* 
+============================
+| Subscribe section / Подпишитесь на рассылку
+============================
+*/
+
+.subscribe-form {
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include display-flex(flex-end);
+    width: 570px;
+  }
+}
+
+.subscribe-form__label {
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+.subscribe-form__title {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-style: normal;
+  @include fonts(14px, 1.14);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-white-cl);
+}
+
+.subscribe-form__text {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+  width: 100%;
+  padding: 15px 15px 15px 16px;
+  height: 50px;
+  font-weight: 400;
+  @include fonts(16px, 1.25, 0.03em);
+  background-color: var(--dark-bg-cl);
+  color: var(--accent-cl-white);
+  border: 1px solid var(--accent-fill-cl);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  cursor: pointer;
+}
+
+.subscribe-form__btn {
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+  }
+
+  &::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url('../images/icons.svg/icon-send.svg');
+    background-size: contain;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--second-accent-cl);
+  }
+}
