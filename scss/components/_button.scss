@@ -1,16 +1,16 @@
-.btn {
-  font-family: inherit;
-  cursor: pointer;
-  @include display-flex(center, center);
-  padding: 10px 32px;
-  border-radius: 4px;
-   
-  font-weight: 700;
-  @include fonts(16px, 1.9);
-  background-color: transparent;
-  background-color:var(--accent-cl);
-  color: var(--main-white-cl);
-  border: transparent;
-  transition: background-color var(--main-animation);
+// .btn {
+//   font-family: inherit;
+//   cursor: pointer;
+//   @include display-flex(center, center);
+//   padding: 10px 32px;
+//   border-radius: 4px;
 
-}
+//   font-weight: 700;
+//   @include fonts(16px, 1.9);
+//   background-color: transparent;
+//   background-color:var(--accent-cl);
+//   color: var(--main-white-cl);
+//   border: transparent;
+//   transition: background-color var(--main-animation);
+
+// }
