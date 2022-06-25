@@ -4,97 +4,97 @@
 ============================
 */
 
-.hero {
-  width: 100%;
-  max-width: 1600px;
-  height: 400px;
-  margin-right: auto;
-  margin-left: auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 118px 0px;
-  color: var(--main-white-cl);
-  background-color: var(--dark-bg-cl);
-  border: 1px solid var(--accent-cl-dark);
-  letter-spacing: 0.06em;
+// .hero {
+//   width: 100%;
+//   max-width: 1600px;
+//   height: 400px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   padding: 118px 0px;
+//   color: var(--main-white-cl);
+//   background-color: var(--dark-bg-cl);
+//   border: 1px solid var(--accent-cl-dark);
+//   letter-spacing: 0.06em;
 
-  @media screen and (min-width: 1200px) {
-    padding: 200px 0px;
-    height: 600px;
-  }
+//   @media screen and (min-width: 1200px) {
+//     padding: 200px 0px;
+//     height: 600px;
+//   }
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/main-page/hero/hero-bcg-img_sm.jpg);
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url(../images/main-page/hero/hero-bcg-img_sm.jpg);
 
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_sm.webp) 1x);
+//   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_sm.webp) 1x);
 
-  @include mq(retina) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/main-page/hero/hero-bcg-img_sm@2x.jpg);
+//   @include mq(retina) {
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../images/main-page/hero/hero-bcg-img_sm@2x.jpg);
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_sm@2x.webp) 2x);
-  }
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_sm@2x.webp) 2x);
+//   }
 
-  @include mq(tablet) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/main-page/hero/hero-bcg-img_md.jpg);
+//   @include mq(tablet) {
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../images/main-page/hero/hero-bcg-img_md.jpg);
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_md.webp) 1x);
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_md.webp) 1x);
 
-    @include mq(retina) {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/main-page/hero/hero-bcg-img_md@2x.jpg);
+//     @include mq(retina) {
+//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url(../images/main-page/hero/hero-bcg-img_md@2x.jpg);
 
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_md@2x.webp) 2x);
-    }
-  }
+//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_md@2x.webp) 2x);
+//     }
+//   }
 
-  @include mq(desktop) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/main-page/hero/hero-bcg-img_lg.jpg);
+//   @include mq(desktop) {
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url(../images/main-page/hero/hero-bcg-img_lg.jpg);
 
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_lg.webp) 1x);
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_lg.webp) 1x);
 
-    @include mq(retina) {
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/main-page/hero/hero-bcg-img_lg@2x.jpg);
+//     @include mq(retina) {
+//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         url(../images/main-page/hero/hero-bcg-img_lg@2x.jpg);
 
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_lg@2x.webp) 2x);
-    }
-  }
-}
+//       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//         -webkit-image-set(url(../images/main-page/hero/hero-bcg-img_lg@2x.webp) 2x);
+//     }
+//   }
+// }
 
-.hero__title {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  margin-bottom: 30px;
-  @include fonts(24px, 1.62);
-  font-weight: 900;
-  text-transform: uppercase;
+// .hero__title {
+//   margin-left: auto;
+//   margin-right: auto;
+//   text-align: center;
+//   margin-bottom: 30px;
+//   @include fonts(24px, 1.62);
+//   font-weight: 900;
+//   text-transform: uppercase;
 
-  @media screen and (min-width: 768px) {
-    width: 360px;
-  }
-  @media screen and (min-width: 1200px) {
-    @include fonts(44px, 1.4);
-    width: 670px;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     width: 360px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     @include fonts(44px, 1.4);
+//     width: 670px;
+//   }
+// }
 
-.hero__btn {
-  margin-left: auto;
-  margin-right: auto;
+// .hero__btn {
+//   margin-left: auto;
+//   margin-right: auto;
 
-  &:hover,
-  &:focus {
-    background-color: var(--second-accent-cl);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: var(--second-accent-cl);
+//   }
+// }
