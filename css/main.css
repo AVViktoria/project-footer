@@ -75,32 +75,6 @@ img {
   margin: 0;
 }
 
-.social-icons__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 0;
-  list-style-type: none;
-}
-
-.social-icons__item {
-  margin-right: 10px;
-}
-
-.social-icons__item:last-child {
-  margin-right: 0;
-}
-
-.social-icons__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 /*
 ============================
 | Modal form / Модальное окно
@@ -452,7 +426,6 @@ img {
   margin-right: auto;
   margin-top: 40px;
   border-bottom: 40px;
-  width: 234px;
 }
 
 .footer__upper-title {
@@ -494,6 +467,44 @@ img {
   margin-bottom: 40px;
 }
 
+.footer__icons-item {
+  margin-right: 28px;
+}
+
+.footer__icons-item:last-child {
+  margin-right: 0;
+}
+
+.socials__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fea5bb;
+}
+
+.socials__link:hover, .socials__link:focus {
+  background-color: #d41443;
+}
+
+.socials__picture {
+  fill: #ffffff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer__contacts-phone {
   font-family: 'DM Sans';
   font-style: normal;
@@ -509,8 +520,10 @@ img {
   color: #d41443;
 }
 
-.footer-sign {
+.footer-sign::before {
   border-top: 1px solid #e1e1e1;
+  content: '';
+  width: 100%;
 }
 
 .footer__sign-text {
@@ -522,25 +535,6 @@ img {
   /* or 21px */
   text-align: center;
   color: #907e82;
-}
-
-.socials__link {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: #fea5bb;
-}
-
-.socials__link:hover, .socials__link:focus {
-  background-color: #d41443;
-}
-
-.socials__picture {
-  fill: #ffffff;
-}
-
-.socials__link:hover .socials__picture {
-  fill: var(--main-white-cl);
 }
 
 /*
