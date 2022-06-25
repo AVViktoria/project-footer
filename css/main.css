@@ -74,41 +74,6 @@ img {
 | Projects section / Проекты
 ============================
 */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .footer {
   background-color: #fff5f6;
   border: 1px solid #000000;
@@ -128,7 +93,7 @@ img {
 .footer__upper-title {
   margin-bottom: 16px;
   text-align: left;
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -139,7 +104,7 @@ img {
 
 .footer__main-title {
   text-align: left;
-  font-family: 'Titan One';
+  font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -165,7 +130,6 @@ img {
 .footer__icons-item {
   margin-right: 28px;
 }
-
 .footer__icons-item:last-child {
   margin-right: 0;
 }
@@ -185,7 +149,6 @@ img {
   border-radius: 50%;
   background-color: #fea5bb;
 }
-
 .footer__icons-link:hover, .footer__icons-link:focus {
   background-color: #d41443;
 }
@@ -201,35 +164,24 @@ img {
 }
 
 .footer__contacts-phone {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
-  /* or 22px */
+  line-height: 2.2;
   text-align: right;
   color: #000000;
 }
-
 .footer__contacts-phone--accent {
   color: #d41443;
 }
 
-.footer-sign::before {
-  margin-top: 16px;
-  content: '';
-  border-top: 1px solid #e1e1e1;
-  width: 100%;
-}
-
 .footer__sign-text {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 152%;
-  /* or 21px */
+  line-height: 1.52;
   text-align: center;
   color: #907e82;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

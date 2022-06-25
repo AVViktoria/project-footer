@@ -4,8 +4,6 @@
   border-top: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-// Footer titles
-// ___________________
 
 .footer-title {
   margin-left: auto;
@@ -38,9 +36,6 @@
   text-transform: uppercase;
   color: #d41443;
 }
-
-// Footer icons
-// ___________________
 
 .footer__icons-list {
   display: flex;
@@ -75,9 +70,6 @@
   align-items: center;
 }
 
-// Footer contacts
-// ___________________
-
 .footer__contacts-phone {
   font-family: 'DM Sans';
   font-style: normal;
@@ -92,14 +84,14 @@
   }
 }
 
-.footer-sign {
-  &::before {
-    margin-top: 16px;
-    content: '';
-    border-top: 1px solid #e1e1e1;
-    width: 100%;
-  }
-}
+// .footer-sign {
+// &::before {
+//   margin-top: 16px;
+//   content: '';
+//   border-top: 1px solid #e1e1e1;
+//   width: 100%;
+// }
+// }
 
 .footer__sign-text {
   font-family: 'DM Sans';
