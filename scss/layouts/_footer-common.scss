@@ -1,6 +1,6 @@
 .footer {
-  background-color: #fff5f6;
-  border: 1px solid #000000;
+  background-color: $primary-background-color;
+  border: 1px solid $black-color;
   border-top: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -16,25 +16,25 @@
 .footer__upper-title {
   margin-bottom: 16px;
   text-align: left;
-  font-family: 'Titan One';
+  font-family: $second-font;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: $text-decoration-color;
 }
 
 .footer__main-title {
   text-align: left;
-  font-family: 'Titan One';
+  font-family: $second-font;
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: $title-text-color;
 }
 
 .footer__icons-list {
@@ -52,53 +52,59 @@
 }
 
 .footer__icons-link {
-  @include display-flex(center, center);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #fea5bb;
+  background-color: $icon-color;
 
   &:hover,
   &:focus {
-    background-color: #d41443;
+    background-color: $title-text-color;
   }
 }
 
 .footer__icons-picture {
-  fill: #ffffff;
+  fill: $white-color;
   justify-content: center;
   align-items: center;
 }
 
 .footer__contacts-phone {
-  font-family: 'DM Sans';
+  font-family: $primary-font;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 2.2;
   text-align: right;
-  color: #000000;
+  color: $black-color;
 
   &--accent {
-    color: #d41443;
+    color: $title-text-color;
   }
 }
 
-// .footer-sign {
-// &::before {
-//   margin-top: 16px;
-//   content: '';
-//   border-top: 1px solid #e1e1e1;
-//   width: 100%;
-// }
-// }
+.footer-sign {
+  margin-top: 16px;
+  margin-bottom: 3px;
+  // &::before {
+  //   content: '';
+  //   border-top: 1px solid #e1e1e1;
+  // margin: 0;
+  // padding: 0;
+  //   width: 100%;
+  // }
+}
 
 .footer__sign-text {
-  font-family: 'DM Sans';
+  font-family: $primary-font;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   text-align: center;
-  color: #907e82;
+  color: $primary-text-color;
 }
+
